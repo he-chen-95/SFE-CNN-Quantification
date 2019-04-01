@@ -1,0 +1,25 @@
+# Virtualenv stuff
+venv/
+
+# tensorflow logs
+logs/
+*.mi-notebook
+
+# checkpoints dir
+checkpoints/
+cnn_architecture/
+
+# data
+data/
+
+# Python stuff
+*.pyc
+*.pyx
+*.c
+*.o
+*.so
+
+# Project stuff
+*.so
+
+
