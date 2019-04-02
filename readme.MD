@@ -1,4 +1,4 @@
-## simple CNN
+## Simple CNN for image classification
 
 #### create venv
 ~~~
