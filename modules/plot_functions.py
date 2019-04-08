@@ -51,9 +51,51 @@ def plot_images(images, cls_true, cls_pred=None):
         ax.set_yticks([])
     # plot images
     plt.show()
-
+########################################################################
+#
+# function used to plot a single images 
+#
+########################################################################
+def plot_image(image):
+    plt.imshow(image, interpolation='nearest', cmap='binary')
+    plt.xticks([])
+    plt.yticks([])
+########################################################################
+#
+# function used to plot 10 images in a 2 * 5 grid
+#
+########################################################################
+def plot_images_10(images, smooth=True):
+    # interpolation type
+    if smooth:
+        interpolation = 'spline16'
+    else:
+        interpolation = 'nearest'
+        
+    # create the figure with sub-plot
+    fig, axes = plt.subplots(2, 5)
+    
+    # Adjust vertical spacing
+    fig.subplots_adjust(hspace=0.1, wspace=0.1)
+    
+    # For each entry in the grid.
+    for i, ax in enumerate(axes.flat):
+        # get the i'th image and only use the desired pixels.
+        img = images[i, :, :]
+        
+        # plot the image
+        ax.imshow(img, interpolation=interpolation, cmap='binary')
+        
+        # remove the ticks
+        ax.set_xticks([])
+        ax.set_yticks([])
+    # ensure the plot is shown correctly with multiple plots in a single notebook cell
+    plt.show()
+    
+########################################################################
 # helper-fuction to plot example errors
 # plot the fist 9 images which not be correctly classified in the test set
+########################################################################
 def plot_example_error(cls_pred, correct):
     # this function is called by function print_test_accuracy() below.
     # cls_pred is an array of the predicted class-number for all images in the test-set
