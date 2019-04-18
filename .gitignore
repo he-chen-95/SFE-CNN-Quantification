@@ -12,6 +12,12 @@ cnn_architecture/
 # data
 data/
 
+# idea IDE 
+.idea/
+
+# ipython checkpoint
+.ipynb_checkpoints/
+
 # Python stuff
 *.pyc
 *.pyx
