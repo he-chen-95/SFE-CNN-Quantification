@@ -1,4 +1,4 @@
-## Simple CNN for image classification
+## CNN Quantification for image classification
 
 #### create venv
 ~~~
@@ -18,3 +18,7 @@ $ source ./venv/bin/activate
 ~~~
 (venv) $ deactivate
 ~~~
+
+#### simple CNN
+![simple_cnn_architecture](https://github.com/he-chen-95/SFE-CNN-Quantification/raw/master/resources/img/simple-CNN.png)
+
