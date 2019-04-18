@@ -1,4 +1,4 @@
-## CNN Quantification for image classification
+## CNN quantification for image classification
 
 #### create venv
 ~~~
