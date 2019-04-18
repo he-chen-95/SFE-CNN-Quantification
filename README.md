@@ -19,6 +19,6 @@ $ source ./venv/bin/activate
 (venv) $ deactivate
 ~~~
 
-#### simple CNN
+#### Simple CNN
 ![simple_cnn_architecture](https://github.com/he-chen-95/SFE-CNN-Quantification/raw/master/resources/img/simple-CNN.png)
 
