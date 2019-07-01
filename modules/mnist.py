@@ -23,7 +23,7 @@ from modules.download import download
 ########################################################################
 
 # Base URL for downloading the data-files from the internet.
-base_url = "https://storage.googleapis.com/cvdf-datasets/mnist/"
+base_url = "https://www.dropbox.com/s/4ut7uju34madtq4/PASCALContourData.tar.gz?dl=0"
 
 # Filenames for the data-set.
 filename_x_train = "train-images-idx3-ubyte.gz"
